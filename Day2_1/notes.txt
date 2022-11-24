@@ -137,6 +137,23 @@ static methods : These are the methods, that which are to be called by using cla
 static variables : These are the variables, that 
 which retains values irrespective of type of object. 
 
+Inheritance : The concept of deriving a new class from already existing
+class known as inheritance, the class which derived known as derived class, the class from which its derived known as base class.  Through inheritance, we can reduce the size of the program. 
+
+class First {
+...
+...
+...
+}
+
+class Second extends First {
+...
+...
+...
+}
+
+Once you create an object to Second class, then you can access all public/protected and friendly members. 
+
 
 
 
