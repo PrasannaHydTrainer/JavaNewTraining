@@ -154,6 +154,66 @@ class Second extends First {
 
 Once you create an object to Second class, then you can access all public/protected and friendly members. 
 
+super keyword : If you want to pass values from
+derived class to base class, then we need the help of super keyword. 
+
+It has 2 forms as 
+
+	(i) super as a keyword
+
+	(ii) super as a constructor
+
+Abstract Class : 
+___________________
+
+A class, that which can be created, but not implemented 
+and instantiated known as abstract class. Abstract class 
+contains abstract and non-abstract methods, abstract methods
+needs to be overrided mandetorily by the derived class. 
+
+You cannot create an object to abstract class. 
+
+Abstract class will have indirect objects. 
+
+interface : 
+____________
+
+Java does not support the concept of multiple inheritance, to achieve this 
+we need the help of interface.  An interface contains method declaration, and the implementation can be done in the corresponding class, you can add more than one interface to the particular class. 
+
+interface can added to class by using implement keyword. 
+
+as definition says similar as interface and abstract class. 
+
+Difference between interface and abstract class 
+_______________________________________________
+
+-> An abstract class contains both abstract and non-abstract methods, where interface contains only abstract methods. 
+
+-> Interface methods are public and abstract by default.
+
+-> Multiple Inheritance can be achieved by using interfaces. 
+
+-> An interface can be called from anywhere to anywhere. 
+
+final keyword : 
+________________
+
+final keyword used to restrict user for making operations as
+
+final variables cannot be changed
+
+final methods cannot be overrided
+
+final classes never be inherited.
+
+interface contains variables, but interface variables are final
+by default. 
+
+
+
+
+
 
 
 

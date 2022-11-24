@@ -52,4 +52,80 @@ it print by element as no element then it comes out of the loop
 
 
 
+______________________________________________
+
+class Demo {
+   public static void main(String[] args) {
+      int x;
+      System.out.println("X value is " +x);
+   }
+}
+
+-- compile time error as use of unassigned value
+
+__________________________________________________
+
+class Demo {
+    public void show(double x) {
+ 	System.out.println("Double  " +x);
+    }
+    public void show(Object x) {
+	System.out.println("Object  " +x);
+    }
+
+    public static void main(String[] args) {
+        new Demo().show(12);
+    }
+}
+
+__________________________________________________
+
+
+class First {
+   public void show() {
+     System.out.println("Hi");
+   }
+}
+
+class Second extends First {
+    public static void show() {
+	System.out.println("Bye");
+    }
+}
+
+class Demo {
+   public static void main(String[] args) {
+      new Second().show();
+   }
+}
+
+-- Compile time error, as Base class methods cannot be
+redfined as static in derived class. 
+
+_____________________________________________________________
+
+class Test {
+    public void show(Object ob) {
+	if (ob=="ABC") {
+	   System.out.println("Correct");
+        } else {
+	   System.out.println("Wrong");
+        }
+    }
+
+    public static void main(String[] args) {
+        Test obj = new Test();
+       // String str="ABC";
+        obj.show("ABC");
+    }
+}
+
+
+// Output is Correct as Object and String are both reference 
+types as unboxing not required here. 
+
+
+
+
+
 
