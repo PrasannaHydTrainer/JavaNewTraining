@@ -1,0 +1,152 @@
+Exception Handling : 
+
+It is a mechanism of handling runtime errors during execution of the program. 
+
+There are 2 types of errors known as 
+
+	(i) Compile Time
+
+	(ii) Runtime 
+
+To handle exceptions, we have 3 blocks 
+
+1) try block : This block contains statements in which there is possibility of getting runtime errors,  the statements which are placed in this block are treated as heavy weighted statements as JVM allocates excess memory to them. 
+
+2) catch block : Once exceptions raised in try block, then the control will be forwarded to catch block, this block contains alternate statements for exceptions raised in try block.  One try block can contains multiple catch blocks. 
+
+3) finally block : This block contains statement(s) that needs to be executed mandetorily irrespective of try and catch blocks. This block is not mandetory, but all the statements which are placed in this block are executed as mandetory statements. 
+
+Exception class is the top most class from which all kinds of Exceptions are derived. 
+
+syntax : 
+_________
+
+try {
+...
+...
+...
+} catch(Exception1 ) {
+   statement(s);
+} catch(Exception2 ) {
+   statement(s);
+} finally {
+   statement(s);
+}
+
+// TODO Auto-generated catch block
+			e.printStackTrace();
+
+printStackTrace() : this method allows you to display entire information about the exception, as Exception contains 
+
+	-> Error Message
+
+	-> Error Line Number
+
+	-> Character Position
+
+	-> Exception class 
+
+All the above things will be described in single line using printStackTrace().
+
+There are 2 types of exceptions known as
+
+	(i) Checked Exceptions : These are the exceptions, that which occurs at compile time, during compilation JVM feels some erroneous code is there and stops the execution at compile time, can be handled at method level by using throws keyword. 
+
+	(ii) Unchecked Exceptions : These are the exceptions, that which occurs at runtime, can be handled by using try...catch block. 
+
+		NumberFormatException
+		ArrayIndexOutOfBoundsException
+		ArithmeticException
+
+
+throws will be at method level, which used to throw Exception classes, as which can be bypassed at method level, will handled at runtime in main(). 
+
+throws keyword : If you want to throw Exception objects, based on the condition, then we need the help of throws keyword. 
+
+Assume, write a program as accept a number, if number < 0 then throw NumberFormatException if number = 0 then throw ArithmeticException, else print that number. 
+
+What is the difference between throw and throws keyword. 
+
+-> throws used to throw Exception classes
+
+-> throws will be defined at class level
+
+throw used to throw exception objects, and 
+it would be written in code level. 
+
+Custom Exceptions : 
+____________________
+
+System exceptions are inadequate to handled in all situations, any class that which derived from exception can be treated as custom exception. 
+
+Any class, that which derived from Exception class, can be treated as custom exception. 
+
+
+class class_name extends Exception {
+ class_name(Exception e) {
+    statement(s);
+ }
+}
+
+Write a Program to accept the age, and check he is elligible for voting or not, if not raise custom Exception as VotingException 
+
+Write a Program to perform sum of 2 numbers, if any number < 0 then throw NegativeException, and if any number = 0 then throw NumberZeroException else print the sum. 
+
+______________________________________________________________________________
+
+Files : A file is a collection of data, that which allows you to store output permanently. To deal with files, we need the help of java.io package. 
+
+File class : Used to display the properties of the file. 
+
+FileReader : This class allows you to read data from file w.r.t. Unicode format, then it allows you to read from text files only. 
+
+read() : Used to read data char/char and displays ascii value, need to typecast, and it returns -1 once it reaches the end of file. 
+
+FileWriter : Use to write data into the file. 
+
+FileWriter fw = new FileWriter(filename);
+
+write() : used to write data into the file. 
+
+FileInputStream : Used to read data w.r.t. Stream of bytes. 
+
+read() : Used to read data char/char and returns ascii value. returns -1 once it reaches EOF. 
+
+FileOutputStream : Used to write data into file w.r.t. Stream of bytes. 
+
+write() : used to write data char/char. 
+
+DataOutputStream : Used to write data into file w.r.t. Primitive Types. 
+
+DataOutputSteam dout = new DataOutputStream(fileName);
+
+writeInt()
+writeUTF()
+writeDouble()
+writeBoolean() 
+
+DataInputStream : Used to read primitive data from the file. 
+
+readInt()
+readUTF()
+readDouble()
+readBoolean()
+
+BufferedReader : Allows you to read data from the keyboard. 
+
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+readLine() : Used to read one line of text. 
+
+ObjectOutputStream : Used to write objects into the file. 
+
+writeObject() : used to write Object into the file. 
+
+
+
+
+
+
+
+
+
