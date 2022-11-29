@@ -1,0 +1,69 @@
+
+
+System exceptions are inadequte to handle in all situations, to overcome this we need the help of Custom Exception. 
+
+Any class, that which derived from Exception can be treated as custom exception.
+
+class class_name extends Exception {
+	class_name(String error) {
+	    super(error);
+	}  
+}
+
+Serilization : Used to write custom objects into the file.
+
+Any class object to be written, then that class must implement Serilizable interface. 
+
+properties : 
+
+Provides an opportunity to protect a field in a class, if you want to control internal behaviour of specific entity, then we need the help of propery. 
+
+For this, we have both getters and setters. where getters are used to read the data, and setters are used to write the data. depends on we can do both the things. 
+
+Employ
+
+	empno  -> int
+	name   -> String
+	gender -> enum 
+	dept  -> String
+	desig  -> String
+	salary  -> double
+
+
+We need to perform operations as
+
+1) Add Employ
+2) Show Employ
+3) Search Employ
+4) Delete Employ
+5) Update Employ
+
+
+Validations : 
+
+empno cannot be negative or zero
+name contains min 5 chars
+dept contains min 3 chars
+desig contains min 4 chars
+salary must be between 10000 to 90000
+
+If any validation fails, then please raise custom exception class. 
+
+Always write the business logic in DAO file, as the filename needs to have suffic as DAO, there only write business logic
+
+Always write Validations in BAL file, as the filename needs to have suffix as BAL
+
+then make file as
+
+EmployDAO for writing business logic.
+
+EmployBAL for writing Validations. 
+
+Always DAO file to be Called in BAL and BAL file to called in main(), that is the flow
+
+
+
+
+
+
+
