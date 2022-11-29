@@ -1,0 +1,13 @@
+1) Write a program to convert centigrade to kelvin (celsius to kelvin)
+
+2) Write a Program to display a number in english words from (1 to 9999) range
+
+as 123 means one hundred twenty three
+
+4200 four thousand two hundred
+
+700 seven hundred
+
+3) Write a Program to convert binary to decimal
+
+4) Write a Program to display a number in roman format from (1 to 9999)
