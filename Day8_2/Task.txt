@@ -1,0 +1,16 @@
+Agent
+  
+   agentId (int)
+   agentName (String)
+   city (String)
+   payMode (enum) (QUARTERLY, HALFYEARLY,YEARLY)
+   premium (double)
+
+Perform
+
+AddAgent
+ShowAgent
+SearchAgent
+DeleteAgent
+UpdateAgent
+
