@@ -1,0 +1,2 @@
+CREATE USER 'divya' @'localhost' IDENTIFIED BY 'divya';
+GRANT ALL ON dxcnew.* TO 'divya' @'localhost';
