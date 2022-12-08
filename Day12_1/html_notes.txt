@@ -1,0 +1,129 @@
+
+HTML (HyperText Markup Langauge)
+
+Allows you to create sample web pages. 
+
+Web Application : These are the applications, that which are to be called from various places rather than where they are created. If you want to make any distributed or robust applications, then we need the help of web applications. 
+
+You can create web applications in 2 ways as
+
+(i) Scripting Languages
+
+(ii) Programming Languages 
+
+Scripting languages are languages, that which are interpreted, so during runtime they takes lot of time to execute. 
+
+Programming languaes are languages, that which are compiled first, during runtime they takes very less time to execute. 
+
+In web applications, we can implement 
+
+	(i) Client-Side 
+
+		Enables you to access the application from same system, network traffic is high, a bit slower. 
+
+	(ii) Server-Side 
+
+		Enables you to access the application from server, 
+
+		Network traffic is high
+
+		A bit slower 
+
+*** Any intranet based application, w.r.t. No security, please opt for client-side scripting ***
+
+*** Any internet based application, w.r.t. Min. security, please opt for both client-side/server-side scripting ***
+
+*** Any internet based application, w.r.t. High security, please opt for server-side scripting ***
+
+HTML allows you to create sample web pages. 
+
+To start, with HTML, we need
+
+<html>
+</html>
+
+<head>
+</head> : used to define the global content for the given page. 
+
+<title> 
+</title> : Used to display heading on title bar. 
+
+<body>
+</body> : Used to display the actual content of the given page. 
+
+To write the defintions, we need the help of Definition Language. 
+
+<dl> : Starts Definition language
+
+<dt> : Definition term
+
+<dd> : Definition Description 
+
+Forms : Allows you to accept input from the keyboard. 
+
+You can start with forms, by using
+
+<form>
+</form> 
+
+You can define textbox, as
+
+<input type="text" />
+
+<input type="button" /> 
+
+<input type="password" /> 
+
+<input type="checkbox" /> 
+
+Tables : Allows you to display data w.r.t. Rows and Columns. 
+
+You can specify table(s) by using 
+
+<table>
+</table> 
+
+<tr>
+</tr> : used to add new row to the given table(s)
+
+<th> : used to add heading to the table cell
+
+<td> : used to add table cell to the given cell. 
+
+HTML will not perform any 
+
+	Business Calculations
+
+	Validations
+
+	Event-based Programming
+
+To ensure we need the help of javascript. 
+
+To start with javascript, we need the help of 
+
+<script>
+</script>
+
+By default <script> tag takes javascript as default langauge. 
+
+You can write the code, by using functions as
+
+function function_name() {
+....
+....
+}
+
+alert() : used to display any value or message. 
+
+events : 
+
+onload() : Once document loaded.
+
+onclick() : Once you click on the button, then this event will be fired. 
+
+
+
+
+
+		
