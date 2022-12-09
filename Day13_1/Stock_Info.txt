@@ -1,0 +1,11 @@
+In the above Stock and Orders table(s), we need to perform the below operations
+
+1) Show Stock
+2) Search By StockId
+
+3) PlaceOrder
+
+For place order, please enter OrderId, StockId and QtyOrd, 
+
+if QtyOrd greater than QtyAvailable, then, you need to insert record into Orders table and BillAmount to be calculate as QtyOrder * price, then the quantity in the Stock table to be decrease (as assume, you have 10 items available and orderPlaced for 3 items, then qtyAvail is 7)
+
